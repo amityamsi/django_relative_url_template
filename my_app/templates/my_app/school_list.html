@@ -1,0 +1,11 @@
+{% extends "my_app/my_app_base.html" %}
+{% block body_block %}
+<div class="jumbotron">
+<h1>welcome to list of schools list</h1>
+<ol>
+    {% for school in schools %}
+    <h1><li>{{school.name}}</li></h1>
+    {% endfor %}
+</ol>
+</div>
+{% endblock %}
